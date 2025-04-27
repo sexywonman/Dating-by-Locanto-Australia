@@ -1,0 +1,241 @@
+@import "css.html";
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border-radius: 20px;
+  padding: 6px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%
+}
+body {
+  font-family: "Quattrocento Sans", sans-serif, Arial;
+  font-size: 100%;
+  margin: 0 auto;
+  min-height: 100%;
+  color: #32445c;
+  background:linear-gradient(90deg, rgba(131, 58, 180, 0.82), rgba(253, 29, 29, 0.86), rgb(252, 176, 69));
+  ;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  /* background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d); */
+}
+.2row{
+}
+.topnav {
+  overflow: hidden;
+  /* background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d); */
+  text-align: center;
+  padding: 15px 0px 0px 0px;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2rem;
+}
+.logo {
+  max-height: 87px;
+  z-index: 12;
+}
+.flashy {
+  /* background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d); */
+  color: #fff;
+  width: 100%;
+  min-height: 20px;
+  color: #fff;
+  font-size: 3rem;
+  padding: 1px 0;
+  margin: 5px auto;
+  text-align: center;
+}
+.step {
+  font-size: 2rem;
+  color: #000;
+  display: none;
+  margin: 0 auto;
+  padding: 0rem 1rem 1rem 1rem;
+  text-align: center
+}
+.step .ok {
+  display: block;
+  background: #9f0909;
+  color: #fff;
+  font-family: 'OpenSansB', Arial, sans-serif;
+  text-align: center;
+  text-transform: capitalize;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  font-size: 30px;
+  width: 40%;
+  min-width: 250px;
+  background: linear-gradient(27deg, #9a0d1a, rgb(244, 71, 4), #9f0909);
+}
+.step .ok:hover {
+  background: #cc1a1a;
+  background: linear-gradient(27deg, #cc1a1a, rgb(255, 123, 73), #ee1c1c);
+}
+.step .ok:after {
+  content: '';
+  display: block;
+  width: 22px;
+  height: 28px;
+  position: absolute;
+  right: 40px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  background: url(../landings/171572/1568019859/images/btnpart.html) no-repeat;
+  -webkit-animation: next 1.2s infinite normal ease-out;
+  -moz-animation: next 1.2s infinite normal ease-out;
+  animation: next 1.2s infinite normal ease-out
+}
+@-webkit-keyframes next {
+  0% {
+    opacity: 0;
+    right: 40px;
+  }
+  15% {
+    opacity: 1;
+    right: 30px;
+  }
+  100% {
+    opacity: 0;
+    right: 10px;
+  }
+}
+@-moz-keyframes next {
+  0% {
+    opacity: 0;
+    right: 40px;
+  }
+  15% {
+    opacity: 1;
+    right: 30px;
+  }
+  100% {
+    opacity: 0;
+    right: 10px;
+  }
+}
+@keyframes next {
+  0% {
+    opacity: 0;
+    right: 40px;
+  }
+  15% {
+    opacity: 1;
+    right: 30px;
+  }
+  100% {
+    opacity: 0;
+    right: 10px;
+  }
+}
+.step:nth-child(1) {
+  display: block
+}
+.step p {
+  font-size: 2rem;
+  padding: 2rem 0
+}
+.step.step_check .step_head {
+  text-transform: none
+}
+.choose_answer {
+  font-style: italic;
+  font-size: 2rem;
+  padding: 2rem 0 3rem 0;
+  display: block
+}
+.answer_box {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top
+}
+.checkbox_wrap {
+  margin: 0 auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: space-around;
+  ;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 600px
+}
+.option {
+  width: 25%;
+  position: relative;
+  text-align: left;
+  cursor: pointer;
+  text-align: center;
+  margin: 0.5rem 2%;
+  padding: 0;
+}
+.option img {
+  display: block;
+  width: 100%;
+  border: 3px solid #000;
+  border-radius: 8px
+}
+.option-title {
+  font-size: 2rem;
+  padding-top: 5px
+}
+.option.checked img {
+  border-color: #b00000
+}
+.option.checked .option-title {
+  color: #b00000
+}
+.btn {
+  color: #fff;
+  display: block;
+  margin: 2rem auto;
+  padding: 13px 0;
+  max-width: 220px;
+  width: 100%;
+  font-size: 2rem;
+  font-family: Arial;
+  border: none;
+  text-decoration: none;
+  background: #4932db
+}
+.btn:hover {
+  background: #f7bd4d
+}
+@media screen and (max-width: 560px) {
+  html {
+    font-size: 55%
+  }
+  .answer_box {
+    display: block;
+    text-align: left
+  }
+  .girl {
+    width: 45%;
+  }
+  .option {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 420px) {
+  html {
+    font-size: 55%
+  }
+}
+@media screen and (max-width: 350px) {
+  .girl {
+    width: 45%;
+  }
+}
